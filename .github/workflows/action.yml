@@ -23,7 +23,8 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: 上海天气 [${{env.REPORT_DATE}}]
-          body: ["file://result.html","file://Shanghai_0qp.png"]
+          html_body: file://result.html
+          body: file://Shanghai_0qp.png
           to: ${{ secrets.MAIL_ADDR }}
           #bcc: ${{ secrets.MAIL_BCC_ME }},${{ secrets.MAIL_BCC_LJQ }},${{ secrets.MAIL_BCC_WQH }}
           from: Weather Bot
