@@ -22,10 +22,10 @@ jobs:
           server_port: 994
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
-          subject: Shanghai Weather Report (${{env.REPORT_DATE}})
+          subject: 上海天气 [${{env.REPORT_DATE}}]
           body: file://result.html
           to: ${{ secrets.MAIL_ADDR }}
-          bcc: ${{ secrets.MAIL_BCC_ADDR1 }},${{ secrets.MAIL_BCC_ADDR2 }},${{ secrets.MAIL_BCC_ADDR3 }}
+          bcc: ${{ secrets.MAIL_BCC_ME }},${{ secrets.MAIL_BCC_LJQ }},${{ secrets.MAIL_BCC_WQH }}
           from: Weather Bot
           content_type: text/html
           secure: true
