@@ -27,3 +27,4 @@ jobs:
           to: ${{ secrets.MAIL_ADDR }}
           from: GitHub Actions
           content_type: text/html
+          secure: true
