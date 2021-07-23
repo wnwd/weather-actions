@@ -26,7 +26,7 @@ jobs:
           html_body: file://result.html
           attachments: Shanghai_0qp.png
           to: ${{ secrets.MAIL_ADDR }}
-          #bcc: ${{ secrets.MAIL_BCC_ME }},${{ secrets.MAIL_BCC_LJQ }},${{ secrets.MAIL_BCC_WQH }}
+          bcc: ${{ secrets.MAIL_BCC_ME }},${{ secrets.MAIL_BCC_LJQ }},${{ secrets.MAIL_BCC_WQH }},${{ MAIL_BCC_YHB }}
           from: Weather Bot
           content_type: text/html
           secure: true
