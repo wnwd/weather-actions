@@ -25,7 +25,7 @@ jobs:
           subject: Shanghai Weather Report (${{env.REPORT_DATE}})
           body: file://result.html
           to: ${{ secrets.MAIL_ADDR }}
-          bcc: ${{ secrets.MAIL_BCC_ADDR }}
+          bcc: ${{ secrets.MAIL_BCC_ADDR1 }},${{ secrets.MAIL_BCC_ADDR2 }},${{ secrets.MAIL_BCC_ADDR3 }}
           from: Weather Bot
           content_type: text/html
           secure: true
