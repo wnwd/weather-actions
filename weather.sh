@@ -13,4 +13,4 @@ curl \
   -o result.html \
   wttr.in/$CITY?format=4\&$UNIT
 
-wget wttr.in/${CITY}_0qp.png
+wget wttr.in/${CITY}_0qp_lang=zh.png
